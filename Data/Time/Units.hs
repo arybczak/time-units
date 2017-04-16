@@ -140,9 +140,9 @@ instance TimeUnit Microsecond where
   toMicroseconds (Microsecond x) = x
   fromMicroseconds x             = Microsecond x
 instance Show Microsecond where
-  show (Microsecond x) = show x ++ "µs"
+  show (Microsecond x) = show x ++ "mcs"
 instance Read Microsecond where
-  readsPrec = readUnit Microsecond "µs"
+  readsPrec = readUnit Microsecond "mcs"
 
 --
 
